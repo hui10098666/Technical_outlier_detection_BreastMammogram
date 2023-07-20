@@ -1,0 +1,8 @@
+<application>
+  <component name="TerminalOptionsProvider">
+    <envs>
+      <env key="PATH" value="%windir%\System32\cmd.exe &quot;/K&quot; D:\program\Anaconda\afterinstallation\Scripts\activate.bat D:\program\Anaconda\afterinstallation" />
+    </envs>
+    <option name="myShellPath" value="cmd.exe &quot;/K&quot; D:\program\Anaconda\afterinstallation\Scripts\activate.bat D:\program\Anaconda\afterinstallation" />
+  </component>
+</application>
