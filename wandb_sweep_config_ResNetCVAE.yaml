@@ -1,0 +1,59 @@
+method: grid
+metric:
+  goal: minimize
+  name: Validation Loss
+parameters:
+  batch_size:
+    value: 64
+  dataset_name:
+    values:
+    - BRAIX
+  earlystop_patience:
+    value: 15
+  epochs:
+    value: 100
+  first_out_channels:
+    values:
+    - 8
+    - 16
+    - 32
+  image_channels:
+    value: 1
+  imageinfo_clinical_path:
+    values:
+    - ./data/Hui_BRAIX_dataset_info.xlsx
+  latent_dim:
+    values:
+    - 128
+    - 256
+    - 512
+    - 1024
+  learning_rate:
+    value: 0.0005
+  model:
+    values:
+    - ResNetCVAE
+  num_Blocks:
+    values:
+    - 2,2,2,2
+  num_workers:
+    value: 6
+  optimizer:
+    values:
+    - adam
+  reduceLR_patience:
+    value: 5
+  resize:
+    values:
+    - 128
+    - 256
+    - 512
+  save_dir:
+    values:
+    - ./output/
+  seed:
+    value: 42
+  train_set_ratio:
+    value: 0.6
+  valid_set_ratio:
+    value: 0.1

@@ -1,0 +1,20 @@
+name: sharedenv
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - cudatoolkit=10.2
+  - numpy=1.21.*
+  - pandas=1.1.*
+  - pillow=5.4.*
+  - pytorch=1.11.0
+  - scikit-image=0.16.*
+  - scikit-learn=1.0.*
+  - tqdm=4.26.*
+  - seaborn=0.11.*
+  - pip
+  - pip:
+      - timm
+      - wandb
+      - opencv-python
